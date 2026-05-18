@@ -28,7 +28,7 @@ function EmployeeForm() {
     };
 
     await axios.post(
-      "http://localhost:5000/api/employees",
+      "https://employee-ai-backend-e4th.onrender.com/api/employees",
       payload
     );
 

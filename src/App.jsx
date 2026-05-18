@@ -34,7 +34,7 @@ function App() {
   const fetchEmployees = async () => {
 
     const res = await axios.get(
-      "http://localhost:5000/api/employees"
+      "https://employee-ai-backend-e4th.onrender.com/api/employees"
     );
 
     setEmployees(res.data);
@@ -113,7 +113,7 @@ function App() {
 
       await axios.put(
 
-        `http://localhost:5000/api/employees/${editingId}`,
+        `https://employee-ai-backend-e4th.onrender.com/api/employees/${editingId}`,
 
         payload
 
@@ -130,7 +130,7 @@ function App() {
 
       await axios.post(
 
-        "http://localhost:5000/api/employees",
+        "https://employee-ai-backend-e4th.onrender.com/api/employees",
 
         payload
 
@@ -162,7 +162,7 @@ function App() {
 
     await axios.delete(
 
-      `http://localhost:5000/api/employees/${id}`
+      `https://employee-ai-backend-e4th.onrender.com/api/employees/${id}`
 
     );
 
@@ -210,7 +210,7 @@ function App() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/auth/signup",
+        "https://employee-ai-backend-e4th.onrender.com/api/auth/signup",
 
         authData
 
@@ -236,7 +236,7 @@ function App() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/auth/login",
+        "https://employee-ai-backend-e4th.onrender.com/api/auth/login",
 
         authData
 
@@ -282,7 +282,7 @@ function App() {
 
     const res = await axios.post(
 
-      "http://localhost:5000/api/ai/recommend",
+      "https://employee-ai-backend-e4th.onrender.com/api/ai/recommend",
 
       employee
 
